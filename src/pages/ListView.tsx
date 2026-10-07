@@ -26,7 +26,7 @@ export default function ListView() {
       let cmp =
         sortKey === 'idMeal'
           ? Number(a.idMeal) - Number(b.idMeal)
-          : a[sortKey].localeCompare(b[sortKey]);
+          : (a[sortKey] ?? '').localeCompare(b[sortKey] ?? '');
       if (cmp === 0) cmp = a.strMeal.localeCompare(b.strMeal);
       return order === 'asc' ? cmp : -cmp;
     });
