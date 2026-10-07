@@ -9,7 +9,6 @@ type SortOrder = 'asc' | 'desc';
 const SORT_OPTIONS: { value: SortKey; label: string }[] = [
   { value: 'strMeal', label: 'Name' },
   { value: 'strCategory', label: 'Category' },
-  { value: 'strArea', label: 'Cuisine' },
   { value: 'idMeal', label: 'ID' },
 ];
 
